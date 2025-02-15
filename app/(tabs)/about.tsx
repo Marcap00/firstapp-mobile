@@ -5,7 +5,7 @@ import { Text, View, StyleSheet } from "react-native";
 export default function AboutScreen() {
     return (
         <View style={styles.container}>
-            <Text>About screen</Text>
+            <Text style={styles.title}>About screen</Text>
             <Link href="/" style={styles.btnLink}>Go to Home screen</Link>
         </View>
     );
@@ -17,6 +17,11 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
         backgroundColor: "#c8c8c8",
+    },
+    title: {
+        fontSize: 20,
+        fontWeight: "bold",
+        color: "#fff",
     },
     btnLink: {
         marginTop: 20,
